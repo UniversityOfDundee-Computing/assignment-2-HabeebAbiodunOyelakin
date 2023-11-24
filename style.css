@@ -187,3 +187,13 @@ ul {
 .uil {
     color: #ff8243;
 }
+
+
+.fa-times{
+    transform: rotate(180deg);
+}
+
+.nav-toggle{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
