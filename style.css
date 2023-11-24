@@ -38,6 +38,7 @@ html {
     border-bottom: 1px solid transparent;
 }
 
+
 /* .site-header.sticky_head {
     background: rgb(255 255 255 / 80%);
     padding: 20px 0;
@@ -63,7 +64,8 @@ img {
 .main-navigation .menu li {
     display: inline-block;
     position: relative;
-    margin: 0 6px;
+    margin: 0 5px;
+    font-size: 20px;
 }
 
 .main-navigation .menu li:first-child {
@@ -109,7 +111,6 @@ ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    /* color: #0d0d25; */
     color: white;
     text-transform: capitalize;
     font-weight: 500;
@@ -127,7 +128,7 @@ ul {
 
 /* Search div styling */
 .header-right {
-    margin-left: 40px;
+    margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -184,16 +185,108 @@ ul {
     -webkit-tap-highlight-color: transparent;
 }
 
-.uil {
-    color: #ff8243;
-}
 
 
-.fa-times{
+.fa-times {
     transform: rotate(180deg);
 }
 
-.nav-toggle{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+#menu-bar {
+    display: none;
+    font-size: 30px;
+}
+
+
+@media (max-width: 1080px) {
+    .main-navigation .menu li a {
+        font-weight: 450;
+        padding: 5px 9px;
+    }
+}
+
+@media (max-width: 995px) {
+    #header-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-navigation {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 790px) {
+    #header-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-navigation {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 80%;
+        border-top: 1px solid #fff3;
+        background-color: #514d55;
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header-menu.nav-toggle {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .main-navigation .menu li {
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+
+    #menu-bar {
+        display: flex;
+        justify-self: flex-end;
+        align-self: start;
+    }
+
+    .header-right {
+        display: flex;
+        justify-self: flex-end;
+        align-self: start;
+        margin-right: 5px;
+    }
+
+    .header-search-form .form-input {
+        font-size: 10px;
+        padding-right: 40px;
+        width: 100px;
+        height: 30px;
+    }
+
+
+
+
+}
 
