@@ -462,7 +462,7 @@ p {
     min-width: 120px;
     min-height: 58px;
     background: #f3f3f5;
-    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+    box-shadow: 2px 2px 4px #b2b2b3, -2px -2px 4px #ffffff;
     display: inline-flex;
     justify-content: center;
     align-items: center;
