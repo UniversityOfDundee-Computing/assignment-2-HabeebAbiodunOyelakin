@@ -687,11 +687,24 @@ p {
 
 /* order page stying */
 
+
+
+
 .order {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 400px;
+    position: relative;
+   
+    /* height: 100vh; */
+    /* width: 100%; */
   }
+  .order-close{
+    position: relative;
+    top: 100px;
+  }
+
 .input-container {
     display: flex;
     align-items: center;
@@ -700,7 +713,8 @@ p {
     width: 300px;
     height: 50px;
     border-radius: 50px;
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 3rem;
     position: relative;
     transition: width 1.5s;
   }
@@ -723,7 +737,7 @@ p {
     text-align: center;
     margin: 0 auto;
     cursor: pointer;
-    color: #ffa31a;
+    color: #ff6e00;
   }
   
   .period li {
@@ -733,13 +747,18 @@ p {
   }
   
   .container_ {
-    width: 60%;
-    padding: 3rem;
-    box-shadow: 10px 10px 40px 5px #e0e0e0;
-    margin-top: 5rem;
+    width: 50rem;
+    padding: 5rem;
+    box-shadow:10px 10px 40px 5px #e0e0e0;
+    margin-top: 1.5rem;
+    margin-left: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  .content-container {
+    width: 70%;
   }
   
   .content-container h1 {
@@ -752,8 +771,8 @@ p {
     font-family: sans-serif;
     line-height: 1.4;
     margin-bottom: 2rem;
-    color: #444444;
-    width: 26rem;
+    color: black;
+    width: 18rem;
   }
   
   .food-img {
@@ -790,13 +809,19 @@ p {
   }
   
   .main-btn {
-    background: transparent;
-    border: none;
-    border: 2px solid #ffa31a;
-    padding: 10px;
-    color: #ffa31a;
+    border: 1px solid #ff6e00;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    color: black;
   }
   
+  .info {
+    text-align: justify;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif; 
+  }
 
 
 
