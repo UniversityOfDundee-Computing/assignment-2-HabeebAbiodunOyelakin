@@ -22,11 +22,9 @@ body {
     left: auto;
 }
 
-body,
-html {
+body, html {
     overflow-x: hidden;
 }
-
 
 /* header styling starts */
 .site-header {
@@ -42,7 +40,6 @@ html {
     border-bottom: 1px solid transparent;
     background-color: rgb(217, 101, 217);
 }
-
 
 /* .site-header.sticky_head {
     background: rgb(255 255 255 / 80%);
@@ -1171,6 +1168,20 @@ p {
 }
 
 
+
+.jokes-section{
+    margin-top: 20px;
+    background-image: url("images/menu-pictures/menu-background.png");
+    /* color: white; */
+    /* height: 80px; */
+}
+
+
+
+
+
+
+
 /* Reservation page main section area styling stars */
 
 .book-table {
@@ -1236,96 +1247,35 @@ p {
 }
 
 .call-now a:hover, .contact-info a:hover {
-    color: #fcbc30;
+    color: #806324;
 }
 
-#gallery {
-    padding-top: 120px;
-}
 
-.book-table-img {
-    height: 70vh;
-    min-height: 500px;
-    border-radius: 30px;
-}
 
-.back-img {
-    background-position: center;
-    background-size: cover;
-}
 
-.swiper-button-next::after, .swiper-button-prev::after {
-    display: none;
-}
 
-.swiper-button-wp {
+#support {
     position: relative;
-    margin-top: 60px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.support-container{
     display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: space-around;
+    align-content: center;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    position: unset;
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    font-size: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0;
-    color: #0d0d25;
-    background: #ffffff;
-    box-shadow: -20px 20px 60px #d4d4d4, 20px -20px 60px #ffffff;
-    padding-top: 1px;
-    padding-right: 2px;
-    transition: 0.3s;
+.support-item{
+    height: 150px;
+    width: 200px;
+    margin-top: 30px;
 }
 
-.swiper-button-next {
-    box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
-    padding-left: 3px;
+.support-item p{
+    text-align: center;
+    margin-top: 2px;
+    color: white;
 }
-
-.swiper-button-prev:hover {
-    box-shadow: inset 5px 5px 20px #d4d4d4, inset -5px -5px 20px #ffffff;
-    color: #fcbc30;
-}
-
-.swiper-button-next:hover {
-    box-shadow: inset -5px 5px 20px #d4d4d4, inset 5px -5px 20px #ffffff;
-    color: #fcbc30;
-}
-
-.swiper-pagination {
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 60px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 25px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
-    max-width: fit-content;
-    left: 50% !important;
-    transform: translate(-50%, 0);
-    bottom: 0 !important;
-    color: #000;
-}
-
-.swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    margin: 0px 10px !important;
-    border-radius: 10px;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-}
-
-.swiper-pagination-bullet-active {
-    background: #fcbc30;
-    width: 30px;
-}
-
-/* *************** */
-
-
-
