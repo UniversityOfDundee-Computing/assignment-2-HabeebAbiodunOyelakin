@@ -5,9 +5,10 @@ $('#menu-bar').click(function addToggle() {
     $('.site-header').toggleClass('site-header-reduce')
 })
 
+
 //This code added functionality to the Order now button in homepage menu section
 $('.order-btn').click(function goToOrderPage(){
-  window.location.href='order_page.html'
+  window.location.href='order_page.html';
 })
 
 
@@ -20,13 +21,11 @@ $('.order-btn').click(function goToOrderPage(){
 // function append(parent, el) {
 //     return parent.appendChild(el);
 // }
-// const numberOfUsers = 10;
+
 // const ul = document.getElementById('authors');
 
 
-
-
-// const url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=$' + numberOfUsers;
+// const url = 'https://api.spoonacular.com/food/jokes/random?apiKey=f1f952480e664ae9bc75f82b4d011a66';
 // fetch(url)
 //     .then((resp) => resp.json())
 //     .then(function (data) {
@@ -45,6 +44,32 @@ $('.order-btn').click(function goToOrderPage(){
 //     .catch(function (error) {
 //         console.log(error);
 //     });
+
+
+    function createNode(element){
+      return  document.createElement(element);
+    }
+    function append(parent, el){
+        return parent.append(el);
+    }
+
+    const para = document.querySelector('.jokes');
+    const url = 'https://api.spoonacular.com/food/trivia/random?apiKey=f1f952480e664ae9bc75f82b4d011a66';
+
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data){          
+                let p = createNode('p');
+                  p.innerHTML = data.text;
+                append(para, p);
+        });
+
+    
+// document.querySelector('.jokeload').addEventListener('click', function(){
+//   window.location.href='#newjoke';
+//   // window.location.reload();
+//   window.location.href='#jokeload';
+// })
 
 
 
