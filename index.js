@@ -5,6 +5,12 @@ $('#menu-bar').click(function addToggle() {
     $('.site-header').toggleClass('site-header-reduce')
 })
 
+//This code added functionality to the Order now button in homepage menu section
+$('.order-btn').click(function goToOrderPage(){
+  window.location.href='order_page.html'
+})
+
+
 
 
 // function createNode(element) {
@@ -41,6 +47,9 @@ $('#menu-bar').click(function addToggle() {
 //     });
 
 
+
+//These line of codes fetch data from mealDB API. I have used it the order page of the website. It allows the user 
+//to search for any sort of meal they would like to order. 
 const searchMeal = async (e) => {
     e.preventDefault();
   
