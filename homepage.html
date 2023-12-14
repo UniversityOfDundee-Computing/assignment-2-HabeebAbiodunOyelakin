@@ -18,17 +18,20 @@
 
     <!-- link to css file -->
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
-<body class="fix-body">
+<body>
     <!-- start of header  -->
-    <header id="header" class="site-header">
+    <header class="site-header">
         <div class=" container-fluid">
             <div class="row">
                 <div id="header-logo" class="col-lg-2 col-xl-2 col-xxl-2">
                     <div class="header-logo">
-                        <a href="homepage.html"><img src="restaurantlogo.png" width="160" height="36"
-                                alt="Restaurant logo"></a>
+                        <a href="homepage.html">
+                            <img src="restaurantlogo.png" width="160" height="36" alt="Restaurant logo">
+                        </a>
                     </div>
                 </div>
 
@@ -39,7 +42,7 @@
                             <ul class="menu food-nav-menu">
                                 <li><a href="homepage.html">Home</a></li>
                                 <li><a href="about_page.html">About</a></li>
-                                <li><a href="#food-menu">Menu</a></li>
+                                <li><a href="homepage.html#food-menu">Menu</a></li>
                                 <li><a href="order_page.html">Order</a></li>
                                 <li><a href="support_page.html">Help</a></li>
                                 <li><a href="reservation_page.html">RES</a></li>
@@ -358,7 +361,7 @@
                 </div>
             </div>
             <div class="dish-order-btn">
-                <button class="order-btn btn btn-primary" >Order
+                <button class="order-btn btn btn-primary">Order
                     now</button>
             </div>
         </section>
@@ -380,7 +383,7 @@
                             <p>It tends to be lower in fat than traditional pork pepperoni and is a popular alternative
                                 for people looking for a leaner option or those who do not consume pork due to dietary
                                 restrictions or personal preferences. Chicken pepperoni can be used as a topping on
-                                pizzas, added to sandwiches, salads, or enjoyed as a snack on its own.</p>                      
+                                pizzas, added to sandwiches, salads, or enjoyed as a snack on its own.</p>
                         </div>
                     </div>
                 </div>
@@ -388,11 +391,11 @@
         </section>
 
 
-        <section class="two-col-sec jokes-section pt-0 bg-light repeat-img">
+        <section id="jokereload" class="two-col-sec jokes-section pt-0 bg-light repeat-img">
             <div class="container  ">
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-1 order-2">
-                        <div  class="sec-text">
+                        <div class="sec-text">
                             <h2 class="">Let's enlighten you with some food trivials <span>&#128522</span></h2>
                             <p id="newjoke" class="jokes"></p>
                             <button class="btn btn-secondary jokeload">Click for more</button>
@@ -407,18 +410,53 @@
             </div>
         </section>
 
-
-
-
-
-
+        <section class="our-team section">
+            <div class="sec-wp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sec-title text-center mb-5">
+                                <p class="sec-sub-title mb-3">Our Team</p>
+                                <h2 class="h2-title">Meet our Chefs</h2>
+                                <div class="sec-title-shape mb-4">
+                                    <img src="images/title-shape.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row w-100 chefs">
+                            <div class="card col-lg-4">
+                                <img src="images/restaurantchefs/c1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Danny Water</h5>
+                                    <a href="#" class="btn btn-primary"><i
+                                            class="fa-brands fa-facebook-messenger"></i></a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-4 ">
+                                <img src="images/restaurantchefs/c2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paul Walker</h5>
+                                    <a href="#" class="btn btn-primary"><i
+                                            class="fa-brands fa-facebook-messenger"></i></a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-4">
+                                <img src="images/restaurantchefs/c3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tunde Olawowo</h5>
+                                    <a href="#" class="btn btn-primary"><i
+                                            class="fa-brands fa-facebook-messenger"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- main section ends -->
-
-
-
-
-
 
     <!-- footer starts  -->
     <footer class="site-footer " id="contact">
