@@ -6,6 +6,15 @@ $('#menu-bar').click(function addToggle() {
 })
 
 
+//This code shrinks the header on scrolling 50px downward
+$(window).scroll(function(){
+  if($(document).scrollTop() > 50) {
+      $('.site-header').addClass('small');
+  } else {
+      $('.site-header').removeClass('small');
+  }
+});
+
 //This code added functionality to the Order now button in homepage menu section
 $('.order-btn').click(function goToOrderPage(){
   window.location.href='order_page.html';
@@ -46,6 +55,7 @@ $('.order-btn').click(function goToOrderPage(){
 //     });
 
 
+
     function createNode(element){
       return  document.createElement(element);
     }
@@ -53,16 +63,30 @@ $('.order-btn').click(function goToOrderPage(){
         return parent.append(el);
     }
 
+    
     const para = document.querySelector('.jokes');
     const url = 'https://api.spoonacular.com/food/trivia/random?apiKey=f1f952480e664ae9bc75f82b4d011a66';
+    
+    function fetchedTrivial(){
+      fetch(url)
+      .then((resp) => resp.json())
+      .then(function(data){          
+              let p = createNode('p');
+                p.innerHTML = data.text;
+              append(para, p);
+      });
+    }
+    fetchedTrivial();
 
-    fetch(url)
-        .then((resp) => resp.json())
-        .then(function(data){          
-                let p = createNode('p');
-                  p.innerHTML = data.text;
-                append(para, p);
-        });
+
+
+    document.querySelector('.jokeload').addEventListener('click',function(){
+      fetchedTrivial();
+      location.replace(location.href='homepage.html#jokereload')
+  })
+
+
+
 
     
 // document.querySelector('.jokeload').addEventListener('click', function(){
